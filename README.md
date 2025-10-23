@@ -5,13 +5,16 @@ Welcome! In this interview we'll build a small Product Catalog in Vue 3 + TypeSc
 ## Quick Start
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/extole/extole-frontend-interview.git
 cd extole-frontend-interview
+git checkout starter  # Use the starter branch for the interview
 npm install
 npm start
 ```
 
 Then open **http://localhost:5173** in your browser. Both the API server (port 3001) and dev server (port 5173) will start automatically.
+
+> **Note**: The `main` branch contains a complete reference solution. Use the `starter` branch for the interview.
 
 ## Goals
 
@@ -118,12 +121,17 @@ export async function toggleFavorite(id: string): Promise<Product> {
 }
 ```
 
-## File you'll work in most
+## Files you'll work in
 
-- `src/features/catalog/CatalogPage.vue`
-- `src/features/catalog/useProducts.ts`
-- `src/features/catalog/useToggleFavorite.ts`
-- `src/features/catalog/useProduct.ts` (stretch)
+All files are in `src/features/catalog/`:
+
+- **`CatalogPage.vue`** - Main component (basic structure provided)
+- **`useProducts.ts`** - Query hook for product list (starter provided)
+- **`useToggleFavorite.ts`** - Mutation hook for favorites (starter provided)
+- **`useProduct.ts`** - Query hook for product details (stretch goal)
+- **`api.ts`** - API client (complete - ready to use!)
+
+The API client and backend are fully implemented. Focus on building the frontend with TanStack Query.
 
 ## Discussion prompts (if time remains)
 
