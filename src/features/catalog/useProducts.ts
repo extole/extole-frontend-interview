@@ -5,11 +5,9 @@ import type { Ref } from 'vue'
 export function useProducts(searchRef: Ref<string>) {
   // TODO: Implement the products query
   // - Use the fetchProducts function from api.ts
-  // - Include search in the query key
-  // - Consider using keepPreviousData to prevent layout shift during search
+  // - Include search parameter in the query key
+  // - Pass searchRef.value to fetchProducts
+  // - Consider using keepPreviousData for better UX during search
   
-  return useQuery({
-    queryKey: ['products'],
-    queryFn: () => fetchProducts(''),
-  })
+  throw new Error('useProducts not implemented yet')
 }

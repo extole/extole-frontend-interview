@@ -5,25 +5,24 @@ import type { Ref } from 'vue'
 export function useToggleFavorite(searchRef: Ref<string>) {
   const queryClient = useQueryClient()
 
-  return useMutation({
-    mutationFn: toggleFavorite,
-    
-    // TODO: Implement optimistic updates
-    // onMutate: async (productId: string) => {
-    //   - Cancel outgoing queries
-    //   - Snapshot current data
-    //   - Optimistically update the cache
-    //   - Return context for rollback
-    // },
-    
-    // TODO: Implement error rollback
-    // onError: (err, productId, context) => {
-    //   - Restore snapshot from context
-    // },
-    
-    // TODO: Invalidate queries on settled
-    // onSettled: () => {
-    //   - Invalidate products queries
-    // },
-  })
+  // TODO: Implement the toggle favorite mutation
+  // 
+  // mutationFn: toggleFavorite
+  // 
+  // onMutate: async (productId: string) => {
+  //   1. Cancel outgoing queries to prevent overwrites
+  //   2. Snapshot the current products list
+  //   3. Optimistically update the cache (flip favorite for the product)
+  //   4. Return context with snapshot for potential rollback
+  // }
+  // 
+  // onError: (err, productId, context) => {
+  //   1. Restore the snapshot from context
+  // }
+  // 
+  // onSettled: () => {
+  //   1. Invalidate the products queries to refetch
+  // }
+  
+  throw new Error('useToggleFavorite not implemented yet')
 }

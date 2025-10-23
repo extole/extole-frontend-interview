@@ -5,12 +5,9 @@ import type { Ref } from 'vue'
 export function useProduct(idRef: Ref<string | null>, searchRef: Ref<string>) {
   // TODO: Implement the product detail query
   // - Use the fetchProduct function from api.ts
-  // - Only enable the query when idRef has a value
-  // - Use placeholderData to pull from the products list cache
+  // - Include id parameter in the query key
+  // - Only enable the query when idRef has a value (use computed)
+  // - Use placeholderData to pull from the products list cache to avoid flash
   
-  return useQuery({
-    queryKey: ['product'],
-    queryFn: () => fetchProduct(''),
-    enabled: false,
-  })
+  throw new Error('useProduct not implemented yet')
 }
