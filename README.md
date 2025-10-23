@@ -4,6 +4,8 @@ Welcome! In this interview we'll build a small Product Catalog in Vue 3 + TypeSc
 
 ## Quick Start
 
+### For Interview Candidates
+
 ```bash
 git clone https://github.com/extole/extole-frontend-interview.git
 cd extole-frontend-interview
