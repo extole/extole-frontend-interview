@@ -4,14 +4,29 @@ Welcome! In this interview we'll build a small Product Catalog in Vue 3 + TypeSc
 
 ## Quick Start
 
+### For Interview Candidates
+
 ```bash
-git clone <repository-url>
+git clone https://github.com/extole/extole-frontend-interview.git
 cd extole-frontend-interview
+git checkout starter  # ← Use the starter branch
 npm install
 npm start
 ```
 
-Then open **http://localhost:5173** in your browser. Both the API server (port 3001) and dev server (port 5173) will start automatically.
+Then open **http://localhost:5173** in your browser.
+
+### For Reviewers (Complete Solution)
+
+The `main` branch contains the complete reference implementation. To run it:
+
+```bash
+git checkout main
+npm install
+npm start
+```
+
+Both the API server (port 3001) and dev server (port 5173) will start automatically.
 
 ## Goals
 
